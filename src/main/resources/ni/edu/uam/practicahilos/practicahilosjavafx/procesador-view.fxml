@@ -42,5 +42,9 @@
         <Button fx:id="btnReiniciar"
                 text="Reiniciar"
                 onAction="#reiniciarProceso"/>
+
+        <Button fx:id="btnProcesoBloqueante"
+                text="Proceso bloqueante"
+                onAction="#procesoBloqueante"/>
     </HBox>
 </VBox>

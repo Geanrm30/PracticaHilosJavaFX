@@ -141,4 +141,19 @@ public class ProcesadorController {
             hiloProceso.interrupt();
         }
     }
+
+
+    @FXML
+    private void procesoBloqueante() {
+
+        lblEstado.setText("Procesando...");
+
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+
+        lblEstado.setText("Finalizado");
+    }
 }
